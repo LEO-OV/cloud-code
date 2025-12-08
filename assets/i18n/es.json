@@ -23,19 +23,16 @@
   "services.mobileFeature3": "Publicación en tiendas de aplicaciones.",
 
   "services.ai": "Soluciones de IA",
-  "services.aiText": "Activa el piloto automático. Automatizamos tu operación con IA que trabaja por ti 24/7 sin errores.",
-  "services.aiFeature1": "Chatbots con IA.",
-  "services.aiFeature2": "Automaticación de procesos.",
-  "services.aiFeature3": "Save on costs.",
-
+  "services.aiText": "Activa el piloto automático. Automatizamos tus operaciones con IA que trabaja por ti 24/7.",
+  "services.aiFeature1": "Automatización de procesos.",
+  "services.aiFeature2": "Ahorro en tiempo y costos.",
+  "services.aiFeature3": "Operación continua 24/7.",
   "services.cta": "Más Información",
+
   "about.title": "Sobre <span class=\"featured-text\">Cloud Code</span>",
-  "about.lead": "Somos un equipo multidisciplinario: ingenieros, diseñadores y DevOps que entregan soluciones reales y medibles.",
-  "about.years": "Años de experiencia combinada",
-  "about.item1": "Metodologías ágiles",
-  "about.item2": "Diseño centrado en el usuario",
-  "about.item3": "Soporte y mantenimiento",
-  "about.quote": "\"Calidad, claridad y velocidad en cada entrega.\"",
+  "about.lead": "Transformamos problemas complejos en interfaces simples y potentes, haciendo que la tecnología se adapte a tu negocio, y no al revés.",
+  "about.mission": "Impulsamos a nuestros clientes mediante soluciones digitales inteligentes que mejoran procesos, elevan su presencia digital y generan experiencias memorables.",
+  "about.vision": "Consolidarnos como una empresa líder en transformación digital, expandiendo nuestras soluciones a nuevos mercados y manteniendo un impacto que trasciende en cada organización que atendemos.",
   "about.cta": "Trabaja con nosotros",
 
   "portfolio.title": "<span class=\"featured-text\">Portafolio</span>",
@@ -46,6 +43,7 @@
   "contact.title": "Empecemos a <span class=\"featured-text\">Crear</span>",
   "contact.lead": "¿Tienes una idea? Cuéntanos y te enviamos una propuesta en 24 horas.",
   "contact.cta": "Enviar Email",
+
   "form.name": "Nombre",
   "form.email": "Correo",
   "form.message": "Mensaje",
