@@ -7,7 +7,7 @@
   "hero.subtitle": "Desarrollo web, apps móviles, diseño UI/UX y soluciones de IA para empresas que quieren destacar.",
   "hero.cta": "Cotizar Proyecto",
   "hero.cta2": "Conocer Más",
-  "services.title": "Nuestros <span class=\"text-gradient\">Servicios</span>",
+  "services.title": "Nuestros <span class=\"featured-text\">Servicios</span>",
   "services.lead": "No solo escribimos código; creamos ecosistemas digitales diseñados para escalar, vender y mejorar tus procesos.",
 
   "services.web": "Desarrollo Web",
@@ -29,7 +29,7 @@
   "services.aiFeature3": "Save on costs.",
 
   "services.cta": "Más Información",
-  "about.title": "Sobre <span class=\"text-gradient\">Cloud Code</span>",
+  "about.title": "Sobre <span class=\"featured-text\">Cloud Code</span>",
   "about.lead": "Somos un equipo multidisciplinario: ingenieros, diseñadores y DevOps que entregan soluciones reales y medibles.",
   "about.years": "Años de experiencia combinada",
   "about.item1": "Metodologías ágiles",
@@ -37,10 +37,13 @@
   "about.item3": "Soporte y mantenimiento",
   "about.quote": "\"Calidad, claridad y velocidad en cada entrega.\"",
   "about.cta": "Trabaja con nosotros",
-  "portfolio.title": "Portafolio",
-  "portfolio.lead": "Proyectos reales y casos de éxito.",
+
+  "portfolio.title": "<span class=\"featured-text\">Portafolio</span>",
+
+  "portfolio.lead": "Transformamos ideas complejas en productos digitales de alto impacto.",
+
   "test.title": "Testimonios",
-  "contact.title": "Empecemos a <span class=\"text-gradient\">Crear</span>",
+  "contact.title": "Empecemos a <span class=\"featured-text\">Crear</span>",
   "contact.lead": "¿Tienes una idea? Cuéntanos y te enviamos una propuesta en 24 horas.",
   "contact.cta": "Enviar Email",
   "form.name": "Nombre",

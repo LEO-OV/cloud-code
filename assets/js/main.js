@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const navList = document.querySelector(".nav__list");
   const body = document.documentElement;
   const contactForm = document.getElementById("contactForm");
-  const backTop = document.getElementById("backTop");
   const yearEl = document.getElementById("year");
   const overlay = document.getElementById("overlay");
   const menuToggle = document.getElementById("menuToggle");
@@ -110,18 +109,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // --- BACK TO TOP ---
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 400) backTop.classList.add("is-visible");
-    else backTop.classList.remove("is-visible");
-  });
-  backTop.addEventListener("click", () =>
-    window.scrollTo({ top: 0, behavior: "smooth" })
-  );
-
   // Keyboard: ESC closes mobile nav
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") navList.classList.remove("is-open");
+    if (e.key === "Escape") closeMenu();
   });
 });
 

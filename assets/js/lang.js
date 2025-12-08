@@ -41,7 +41,7 @@ async function updateText(langCode) {
 
 // Toggle idioma
 langToggle.addEventListener("click", () => {
-  lang = lang === "es" ? "en" : "es";
+  lang = lang === "es 🇲🇽" ? "en 🇬🇧" : "es 🇲🇽";
   updateText(lang);
 });
 
