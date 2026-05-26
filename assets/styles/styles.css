@@ -310,8 +310,8 @@ body {
   width: calc((100% - 1rem) / 2);
   height: calc(100% - 1rem);
   border-radius: 999px;
-  background: rgba(124, 58, 237, 0.14);
-  border-color: rgba(124, 58, 237, 0.2);
+  background: rgba(0, 122, 255, 0.14);
+  border: 1px solid rgba(0, 122, 255, 0.2);
   transition:
     transform 240ms ease,
     background-color 240ms ease,
@@ -320,8 +320,8 @@ body {
 
 .lang-toggle[data-current-lang="en"]::before {
   transform: translateX(100%);
-  background: rgba(124, 58, 237, 0.14);
-  border-color: rgba(124, 58, 237, 0.2);
+  background: rgba(0, 122, 255, 0.14);
+  border: 1px solid rgba(0, 122, 255, 0.2);
 }
 
 .lang-toggle__option {
@@ -408,6 +408,7 @@ html[data-theme="dark"] .icon--dark,
   position: relative;
   isolation: isolate;
   overflow: hidden;
+  border-bottom: 1px solid rgba(0, 122, 255, 0.12);
 }
 .hero__bg {
   position: absolute;
