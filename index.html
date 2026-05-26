@@ -81,8 +81,11 @@
       </nav>
 
       <div class="header__controls">
-        <button id="langToggle" class="btn btn--ghost header__btn" aria-pressed="false" aria-label="Cambiar idioma">ES
-          🇲🇽</button>
+        <button id="langToggle" class="btn btn--ghost header__btn lang-toggle" type="button" aria-pressed="false"
+          aria-label="Cambiar a inglés">
+          <span class="lang-toggle__option" data-lang-option="es">ES</span>
+          <span class="lang-toggle__option" data-lang-option="en">EN</span>
+        </button>
         <button id="themeToggle" class="btn btn--icon header__btn" aria-pressed="false" aria-label="Cambiar tema">
           <svg class="icon--dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
             viewBox="0 0 16 16">
@@ -126,8 +129,8 @@
           Desarrollo web, apps móviles, diseño UI/UX y soluciones de IA para empresas que quieren destacar.
         </p>
         <div class="hero__actions">
-          <a href="#contacto" class="btn btn--primary" data-i18n="hero.cta">Cotizar Proyecto</a>
-          <a href="#servicios" class="btn" data-i18n="hero.cta2">Ver servicios</a>
+          <a href="#contacto" class="btn btn--primary" data-i18n="hero.cta">Cotizar proyecto</a>
+          <a href="#servicios" class="btn" data-i18n="hero.cta2">Conocer servicios</a>
         </div>
       </div>
 
@@ -144,10 +147,10 @@
     <section id="servicios" class="services section container" aria-labelledby="servicesTitle">
       <div class="services__header">
         <h2 id="servicesTitle" class="section__title" data-i18n="services.title">
-          Soluciones que <span class="featured-text">Transforman</span>
+          Nuestros <span class="featured-text">Servicios</span>
         </h2>
         <p class="section__lead" data-i18n="services.lead">
-          No solo escribimos código; creamos ecosistemas digitales diseñados para escalar, vender y mejorar tus
+          No solo escribimos código; creamos ecosistemas digitales diseñados para escalar, vender y optimizar tus
           procesos.
         </p>
       </div>
@@ -157,7 +160,7 @@
         <!-- Card 1: Desarrollo Web -->
         <article class="service-card service-card--featured" aria-labelledby="s1">
           <div class="service-card__glow"></div>
-          <div class="service-card__popular">Popular</div>
+          <div class="service-card__popular" data-i18n="services.popular">Popular</div>
 
           <div class="service-card__icon" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop"
@@ -168,7 +171,7 @@
           </div>
 
           <h3 id="s1" class="service-card__title" data-i18n="services.web">
-            Desarrollo Web & Plataformas
+            Desarrollo web
           </h3>
 
           <p class="service-card__text" data-i18n="services.webText">
@@ -185,7 +188,7 @@
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   clip-rule="evenodd" />
               </svg>
-              <span data-i18n="services.webFeature1">Interfaces limpias, intuitivas y responsivas.</span>
+              <span data-i18n="services.webFeature1">Interfaces limpias, intuitivas y totalmente responsivas.</span>
             </li>
             <li>
               <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
@@ -193,7 +196,7 @@
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   clip-rule="evenodd" />
               </svg>
-              <span data-i18n="services.webFeature2">Carga ultrarrápida</span>
+              <span data-i18n="services.webFeature2">Rendimiento y tiempos de carga ultrarrápidos.</span>
             </li>
             <li>
               <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
@@ -201,7 +204,7 @@
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   clip-rule="evenodd" />
               </svg>
-              <span data-i18n="services.webFeature3">SEO optimizado</span>
+              <span data-i18n="services.webFeature3">Arquitectura técnica preparada para SEO.</span>
             </li>
           </ul>
 
@@ -233,7 +236,7 @@
           </h3>
 
           <p class="service-card__text" data-i18n="services.mobileText">
-            Tu negocio en el bolsillo de tus clientes. Creamos apps nativas fluidas, intuitivas y adictivas.
+            Tu negocio en el bolsillo de tus clientes. Creamos apps nativas fluidas, intuitivas y listas para crecer.
           </p>
 
           <ul class="service-card__features">
@@ -243,7 +246,7 @@
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   clip-rule="evenodd" />
               </svg>
-              <span data-i18n="services.mobileFeature1">iOS & Android</span>
+              <span data-i18n="services.mobileFeature1">Compatibilidad completa con iOS y Android.</span>
             </li>
             <li>
               <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
@@ -251,7 +254,7 @@
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   clip-rule="evenodd" />
               </svg>
-              <span data-i18n="services.mobileFeature2">UX diseñada para retención</span>
+              <span data-i18n="services.mobileFeature2">Estrategia UX enfocada en retención.</span>
             </li>
             <li>
               <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
@@ -259,7 +262,7 @@
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   clip-rule="evenodd" />
               </svg>
-              <span data-i18n="services.mobileFeature3">Publicación en tiendas</span>
+              <span data-i18n="services.mobileFeature3">Publicación en tiendas de aplicaciones.</span>
             </li>
           </ul>
 
@@ -292,7 +295,7 @@
           </h3>
 
           <p class="service-card__text" data-i18n="services.aiText">
-            Activa el piloto automático. Automatizamos tu operación con IA que trabaja por ti 24/7 sin errores.
+            Activa el piloto automático. Automatizamos tu operación con IA que trabaja por ti 24/7.
           </p>
 
           <ul class="service-card__features">
@@ -310,7 +313,7 @@
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   clip-rule="evenodd" />
               </svg>
-              <span data-i18n="services.aiFeature2">Ahorro en tiempo y costos.</span>
+              <span data-i18n="services.aiFeature2">Ahorro de tiempo y costos.</span>
             </li>
             <li>
               <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
@@ -345,7 +348,7 @@
 
         <p class="section__lead about__lead" data-i18n="about.lead">
           Transformamos problemas complejos en interfaces simples y potentes, haciendo que la tecnología se adapte a tu
-          negocio, y no al revés.
+          negocio, no al revés.
         </p>
 
         <div class="about__content">
@@ -353,7 +356,7 @@
           <article class="about__item">
             <h3 class="about__item-title" data-i18n="about.missionTitle">Misión</h3>
             <p class="about__item-text" data-i18n="about.mission">
-              Impulsamos a nuestros clientes mediante soluciones digitales inteligentes que mejoran procesos, elevan su
+              Impulsamos a nuestros clientes con soluciones digitales inteligentes que mejoran procesos, elevan su
               presencia digital y generan experiencias memorables.
             </p>
           </article>
@@ -363,7 +366,7 @@
             <h3 class="about__item-title" data-i18n="about.visionTitle">Visión</h3>
             <p class="about__item-text" data-i18n="about.vision">
               Consolidarnos como una empresa líder en transformación digital, expandiendo nuestras soluciones a nuevos
-              mercados y manteniendo un impacto que trasciende en cada organización que atendemos.
+              mercados y manteniendo un impacto que trascienda en cada organización que atendemos.
             </p>
           </article>
         </div>
@@ -375,10 +378,11 @@
     <!-- PORTAFOLIO -->
     <section id="portafolio" class="portfolio section container" aria-labelledby="portfolioTitle">
       <div class="section__header portfolio__header">
-        <h2 id="portfolioTitle" class="section__title">
+        <span class="section__eyebrow" data-i18n="portfolio.eyebrow">Casos de uso</span>
+        <h2 id="portfolioTitle" class="section__title" data-i18n="portfolio.title">
           Nuestros <span class="featured-text">Proyectos</span>
         </h2>
-        <p class="section__lead">
+        <p class="section__lead" data-i18n="portfolio.lead">
           Soluciones tecnológicas diseñadas para impulsar el crecimiento de tu negocio con sistemas confiables y
           escalables.
         </p>
@@ -388,83 +392,84 @@
 
         <!-- Proyecto 1 -->
         <article class="portfolio-card">
-          <div class="portfolio-card__image-holder">
-            <span class="portfolio-card__badge">En producción</span>
-            <img src="" alt="Plataforma E-commerce" class="portfolio-card__img">
+          <div class="portfolio-card__image-holder portfolio-card__image-holder--shop">
+            <span class="portfolio-card__badge" data-i18n="portfolio.project1.status">Caso demostrativo</span>
+            <img class="portfolio-card__image" src="assets/images/e-commerce.webp" alt="Proyecto e-commerce">
           </div>
 
           <div class="portfolio-card__content">
-            <span class="portfolio-card__category">E-commerce</span>
-            <h3 class="portfolio-card__title">Tienda Online de Alto Rendimiento</h3>
-            <p class="portfolio-card__desc">
-              Plataforma de ventas en línea con carrito de compras, pagos seguros y panel administrativo. Diseñada
-              para
-              escalar con tu negocio.
+            <span class="portfolio-card__category" data-i18n="portfolio.project1.category">E-commerce</span>
+            <h3 class="portfolio-card__title" data-i18n="portfolio.project1.title">Tienda online de alto rendimiento
+            </h3>
+            <p class="portfolio-card__desc" data-i18n="portfolio.project1.desc">
+              Plataforma de ventas en línea con carrito de compras, pagos seguros y panel administrativo, preparada para
+              crecer junto a la operación del negocio.
             </p>
+            <ul class="portfolio-card__features" aria-label="Características del proyecto">
+              <li data-i18n="portfolio.project1.feature1">Checkout claro y seguro</li>
+              <li data-i18n="portfolio.project1.feature2">Catálogo administrable</li>
+              <li data-i18n="portfolio.project1.feature3">Base lista para escalar</li>
+            </ul>
 
-            <a href="https://ejemplo-ecommerce.com" target="_blank" rel="noopener noreferrer"
-              class="btn btn--secondary portfolio-card__btn">
-              Ver proyecto
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2">
-                <path d="M5 12h14m-7-7l7 7-7 7" />
-              </svg>
-            </a>
+            <button type="button" class="btn btn--secondary portfolio-card__btn portfolio-card__btn--placeholder"
+              disabled data-i18n="portfolio.placeholderCta">
+              Demo no disponible
+            </button>
           </div>
         </article>
 
         <!-- Proyecto 2 -->
         <article class="portfolio-card">
-          <div class="portfolio-card__image-holder">
-            <span class="portfolio-card__badge">En producción</span>
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
-              alt="Sistema de Gestión" class="portfolio-card__img">
+          <div class="portfolio-card__image-holder portfolio-card__image-holder--ops">
+            <span class="portfolio-card__badge" data-i18n="portfolio.project2.status">Caso demostrativo</span>
+            <img class="portfolio-card__image" src="assets/images/operational-control-system.webp"
+              alt="Proyecto de control operativo">
           </div>
 
           <div class="portfolio-card__content">
-            <span class="portfolio-card__category">Gestión Empresarial</span>
-            <h3 class="portfolio-card__title">Sistema de Control Operativo</h3>
-            <p class="portfolio-card__desc">
-              Plataforma integral para gestionar inventarios, ventas, clientes y reportes. Todo en un solo lugar,
-              accesible desde cualquier dispositivo.
+            <span class="portfolio-card__category" data-i18n="portfolio.project2.category">Gestión empresarial</span>
+            <h3 class="portfolio-card__title" data-i18n="portfolio.project2.title">Sistema de control operativo</h3>
+            <p class="portfolio-card__desc" data-i18n="portfolio.project2.desc">
+              Herramienta centralizada para inventarios, ventas, clientes y reportes, pensada para equipos que necesitan
+              visibilidad sin depender de hojas dispersas.
             </p>
+            <ul class="portfolio-card__features" aria-label="Características del proyecto">
+              <li data-i18n="portfolio.project2.feature1">Flujos operativos organizados</li>
+              <li data-i18n="portfolio.project2.feature2">Reportes accionables</li>
+              <li data-i18n="portfolio.project2.feature3">Acceso multidispositivo</li>
+            </ul>
 
-            <a href="https://ejemplo-gestion.com" target="_blank" rel="noopener noreferrer"
-              class="btn btn--secondary portfolio-card__btn">
-              Ver proyecto
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2">
-                <path d="M5 12h14m-7-7l7 7-7 7" />
-              </svg>
-            </a>
+            <button type="button" class="btn btn--secondary portfolio-card__btn portfolio-card__btn--placeholder"
+              disabled data-i18n="portfolio.placeholderCta">
+              Demo no disponible
+            </button>
           </div>
         </article>
 
         <!-- Proyecto 3 -->
         <article class="portfolio-card">
-          <div class="portfolio-card__image-holder">
-            <span class="portfolio-card__badge">En producción</span>
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
-              alt="Dashboard Analítico" class="portfolio-card__img">
+          <div class="portfolio-card__image-holder portfolio-card__image-holder--data">
+            <span class="portfolio-card__badge" data-i18n="portfolio.project3.status">Caso demostrativo</span>
+            <img class="portfolio-card__image" src="assets/images/analytics.webp" alt="Proyecto de analítica">
           </div>
 
           <div class="portfolio-card__content">
-            <span class="portfolio-card__category">Análisis de Datos</span>
-            <h3 class="portfolio-card__title">Panel de Métricas y Reportes</h3>
-            <p class="portfolio-card__desc">
-              Visualiza el desempeño de tu negocio en tiempo real con gráficas interactivas y reportes personalizados
-              que
-              facilitan la toma de decisiones.
+            <span class="portfolio-card__category" data-i18n="portfolio.project3.category">Análisis de datos</span>
+            <h3 class="portfolio-card__title" data-i18n="portfolio.project3.title">Panel de métricas y reportes</h3>
+            <p class="portfolio-card__desc" data-i18n="portfolio.project3.desc">
+              Dashboard para visualizar desempeño en tiempo real con gráficas, filtros y reportes que facilitan
+              decisiones rápidas y mejor fundamentadas.
             </p>
+            <ul class="portfolio-card__features" aria-label="Características del proyecto">
+              <li data-i18n="portfolio.project3.feature1">Indicadores en tiempo real</li>
+              <li data-i18n="portfolio.project3.feature2">Filtros por área o periodo</li>
+              <li data-i18n="portfolio.project3.feature3">Lectura clara para dirección</li>
+            </ul>
 
-            <a href="https://ejemplo-dashboard.com" target="_blank" rel="noopener noreferrer"
-              class="btn btn--secondary portfolio-card__btn">
-              Ver proyecto
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2">
-                <path d="M5 12h14m-7-7l7 7-7 7" />
-              </svg>
-            </a>
+            <button type="button" class="btn btn--secondary portfolio-card__btn portfolio-card__btn--placeholder"
+              disabled data-i18n="portfolio.placeholderCta">
+              Demo no disponible
+            </button>
           </div>
         </article>
       </div>
@@ -483,8 +488,8 @@
           </h2>
 
           <p class="contact__phrase">
-            No esperes al futuro. <br>
-            <span class="featured-text">Créalo con nosotros.</span>
+            <span data-i18n="contact.phrasePrefix">No esperes al futuro.</span> <br>
+            <span class="featured-text" data-i18n="contact.phraseHighlight">Créalo con nosotros.</span>
           </p>
 
           <div class="contact__buttons">
@@ -493,7 +498,7 @@
                 <path
                   d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
               </svg>
-              Enviar Correo
+              <span data-i18n="contact.emailCta">Enviar correo</span>
             </a>
 
             <a href="https://wa.me/525500000000" target="_blank" rel="noopener noreferrer"
@@ -502,7 +507,7 @@
                 <path
                   d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
               </svg>
-              WhatsApp
+              <span data-i18n="contact.whatsappCta">WhatsApp</span>
             </a>
           </div>
         </div>
